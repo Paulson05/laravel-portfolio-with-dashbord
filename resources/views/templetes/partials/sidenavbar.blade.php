@@ -84,7 +84,7 @@
                 <li  class="active" >
 
 
-                    <a href="dashboard.blade.php">
+                    <a href="{{route('admindashboaard')}}">
 
                         <i class="now-ui-icons design_app"></i>
 

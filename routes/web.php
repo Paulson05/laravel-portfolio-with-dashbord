@@ -24,7 +24,7 @@ Route::get('/', function () {
     return view('portfolio');
 });
 
-Route::get('admin',[AdminController::class, 'index'])->name('admin');
+Route::get('admin',[AdminController::class, 'index'])->name('admindashboaard');
 Route::resource('home', HomeController::class)->only(['index','store','show','update','destroy','edit',  ]);
 Route::resource('about', AboutController::class)->only(['index','store','show','update','destroy','edit', ]);
 Route::resource('portfolio', PortfolioController::class)->only(['index','store','show','update','destroy','edit', ]);
