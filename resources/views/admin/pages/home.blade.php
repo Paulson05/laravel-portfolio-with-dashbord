@@ -12,7 +12,7 @@
                                 <h4 class="card-title">Home page</h4>
                             </div>
                             <div class="col-4 text-right">
-                                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">Add user</a>
+                                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">+</a>
                             </div>
                             <div class="modal" id="myModal">
                                 <div class="modal-dialog modal-lg">
@@ -26,14 +26,14 @@
 
                                         <!-- Modal body -->
                                         <div class="modal-body">
-                                            <form action="" method="post" enctype= "multipart/form-data" >
+                                            <form action="{{route('home.store')}}" method="post" enctype= "multipart/form-data" >
                                                 @csrf
 
                                                 <div class="row">
                                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                                         <div class="form-group">
                                                             <strong>Title</strong>
-                                                            <input type="text" name="title" class="form-control" placeholder="title">
+                                                            <input type="text" name="title" class="form-control" placeholder="title" >
 
                                                         </div>
 
@@ -41,35 +41,18 @@
 
                                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                                         <div class="form-group">
-                                                            <strong>Slug</strong>
-                                                            <input type="text" name="slug" class="form-control" placeholder="slug">
+                                                            <strong>sub title</strong>
+                                                            <input type="text" name="sub_title" class="form-control" placeholder="sub title">
 
                                                         </div>
 
                                                     </div>
-                                                    <div class="col-xs-12 col-sm-12 col-md-12">
-                                                        <div class="form-group">
-                                                            <strong>Category:</strong>
-                                                            <select class="form-control" name="category_id">
 
 
-                                                            </select>
-                                                        </div>
-                                                    </div>
 
-
-                                                    <div class="col-xs-12 col-sm-12 col-md-12">
-                                                        <div class="form-group">
-                                                            <strong>Body:</strong>
-                                                            <textarea cols="10" rows="5" class="form-control"   name="body" value="body"
-                                                                      placeholder="" ></textarea>
-
-                                                        </div>
-
-                                                    </div>
 
                                                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                                                        <button type="submit" class="btn btn-primary">Post</button>
+                                                        <button type="submit" class="btn btn-primary">Add</button>
                                                     </div>
                                                 </div>
 
@@ -85,6 +68,9 @@
 
                             </div>
 
+
+
+
                         </div>
                     </div>
                     <div class="card-body">
@@ -96,70 +82,48 @@
                                     ID
                                 </th>
                                 <th>
-                                    Name
+                                    Title
                                 </th>
                                 <th>
-                                    Country
+                                    Sub-title
                                 </th>
                                 <th>
-                                    City
+                                    action
                                 </th>
-                                <th>
-                                    Salary
-                                </th>
+
                                 </thead>
                                 <tbody>
+
                                 <tr>
+                                    @foreach($homes as $home)
                                     <td>
-                                        1
-                                    </td>
-                                    <td>
-                                        Dakota Rice
+                                        {{$home->id}}
                                     </td>
                                     <td>
-                                        Niger
+                                       {{$home->title}}
                                     </td>
                                     <td>
-                                        Oud-Turnhout
+                                        {{$home->sub_title}}
                                     </td>
-                                    <td class="text-primary">
-                                        $36,738
-                                    </td>
+                                        <td>
+                                            <a href="" title="show">
+                                                <i class="btn btn-primary btn-sm fa fa-eye" ></i>
+                                            </a>
+
+                                            <a href="{{route('home.edit', ['home' =>$home->id])}}"  >
+                                                <i class="btn btn-success btn-sm  fa fa-edit" ></i>
+                                            </a>
+
+                                            <form style="display: inline-block" method="post" action="{{route('home.destroy',['home'=> $home->id])}}" >
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-danger  p-0"><i class="btn btn-danger btn-sm fa fa-trash" ></i></button>
+                                            </form>
+                                        </td>
+                                    @endforeach
+
                                 </tr>
-                                <tr>
-                                    <td>
-                                        2
-                                    </td>
-                                    <td>
-                                        Minerva Hooper
-                                    </td>
-                                    <td>
-                                        Curaçao
-                                    </td>
-                                    <td>
-                                        Sinaai-Waas
-                                    </td>
-                                    <td class="text-primary">
-                                        $23,789
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        Sage Rodriguez
-                                    </td>
-                                    <td>
-                                        Netherlands
-                                    </td>
-                                    <td>
-                                        Baileux
-                                    </td>
-                                    <td class="text-primary">
-                                        $56,142
-                                    </td>
-                                </tr>
+
 
                                 </tbody>
                             </table>

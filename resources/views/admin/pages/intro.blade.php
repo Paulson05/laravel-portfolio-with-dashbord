@@ -12,7 +12,7 @@
                                 <h4 class="card-title">Intro</h4>
                             </div>
                             <div class="col-4 text-right">
-                                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">Add user</a>
+                                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal" style="font-size: 30px">+</a>
                             </div>
                             <div class="modal" id="myModal">
                                 <div class="modal-dialog modal-lg">

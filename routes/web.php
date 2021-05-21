@@ -7,6 +7,7 @@ use App\Http\Controllers\IntroController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\WorkportfolioController;
+use App\Models\Home;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,7 +22,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('portfolio');
+    $homes = Home::all();
+    return view('portfolio')->with([
+        'homes' =>$homes
+    ]);
 });
 
 Route::get('admin',[AdminController::class, 'index'])->name('admindashboaard');

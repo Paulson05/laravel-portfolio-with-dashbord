@@ -15,8 +15,8 @@ class CreateIntroTable extends Migration
     {
         Schema::create('intro', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('intro-title');
-            $table->string('intro-subtitle');
+            $table->string('intro_title');
+            $table->string('intro_subtitle');
 
 
             $table->timestamps();

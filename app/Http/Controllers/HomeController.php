@@ -14,7 +14,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-         return view('admin.pages.home');
+        $homes = Home::all();
+         return view('admin.pages.home')->with([
+             'homes'=> $homes
+         ]);
     }
 
     /**
@@ -22,11 +25,9 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Home $home)
+    public function create()
     {
-        $this->validate($request,[
 
-        ]);
     }
 
     /**
@@ -37,7 +38,14 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $this->validate($request,[
+            'title'=> 'required',
+            'sub_title' => 'required'
+        ]);
+        $array=collect($request->only(['title','sub_title']))->all();
+        Home::create($array);
+        return redirect()->back();
     }
 
     /**
@@ -57,21 +65,19 @@ class HomeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Home $home)
     {
-        //
+        return view('admin.pages.edithome')->with([
+            'home' => $home
+        ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
+    public function update(Request $request, Home $home)
     {
-        //
+
+        $home->update($request->only(['title','sub_title']));
+
+        return redirect()->route('home.index');
     }
 
     /**
@@ -80,8 +86,9 @@ class HomeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, Home $home)
     {
-        //
+        $home->delete();
+        return redirect()->back();
     }
 }
