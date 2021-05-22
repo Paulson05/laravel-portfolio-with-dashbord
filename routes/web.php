@@ -10,6 +10,7 @@ use App\Http\Controllers\SkillController;
 use App\Http\Controllers\WorkportfolioController;
 use App\Models\About;
 use App\Models\Home;
+use App\Models\Skill;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,10 +27,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $homes = Home::all();
     $about= About::all();
+    $skills = Skill::all();
 
     return view('portfolio')->with([
         'homes' =>$homes,
-        'about' => $about
+        'about' => $about,
+        'skills' => $skills
     ]);
 });
 

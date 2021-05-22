@@ -149,7 +149,12 @@
                                     <span class="sidebar-normal">WorkPortfoio</span>
                                 </a>
                             </li>
-
+                            <li >
+                                <a href="{{route('skill.index')}}">
+                                    <span class="sidebar-mini-icon">S</span>
+                                    <span class="sidebar-normal">Skill </span>
+                                </a>
+                            </li>
                             <li >
                                 <a href="pages/lock.html">
                                     <span class="sidebar-mini-icon">LS</span>

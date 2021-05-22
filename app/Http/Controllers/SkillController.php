@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Skill;
 use Illuminate\Http\Request;
 
 class SkillController extends Controller
@@ -13,7 +14,10 @@ class SkillController extends Controller
      */
     public function index()
     {
-     return view('admin.pages.skill');
+        $skills = Skill::all();
+        return view('admin.pages.skill')->with([
+            'skills' => $skills
+        ]);
     }
 
     /**
@@ -34,7 +38,16 @@ class SkillController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $this->validate($request,[
+            'language'=> 'required',
+            'percentage' => 'required',
+            'bar' => 'required'
+
+        ]);
+        $array=collect($request->only(['language','percentage', 'bar']))->all();
+        Skill::create($array);
+        return redirect()->back();
     }
 
     /**

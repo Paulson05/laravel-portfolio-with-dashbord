@@ -32,7 +32,7 @@
                                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                                         <div class="form-group">
                                                             <strong>language</strong>
-                                                            <input type="text" name="" class="form-control" placeholder="language">
+                                                            <input type="text" name="language" class="form-control" placeholder="language">
 
                                                         </div>
 
@@ -45,21 +45,12 @@
                                                         </div>
 
                                                     </div>
-                                                    <div class="col-xs-12 col-sm-12 col-md-12">
-                                                        <div class="form-group">
-                                                            <strong>aria-valuenow</strong>
-                                                            <input type="text" name="aria_valuenow" class="form-control" placeholder="aria-valuenow">
-
-                                                        </div>
-
-                                                    </div>
-
 
 
                                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                                         <div class="form-group">
-                                                            <strong>aria_valuemax</strong>
-                                                            <input type="text" name="aria_valuemax" class="form-control" placeholder="aria_valuemax">
+                                                            <strong> progress bar</strong>
+                                                            <input type="text" name="bar" class="form-control" placeholder="progrss bar">
 
                                                         </div>
 
@@ -68,7 +59,7 @@
 
 
 
-                                                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                                    <div class="col-xs-12 col-sm-12 col-md-12 text-left">
                                                         <button type="submit" class="btn btn-primary">Post</button>
                                                     </div>
                                                 </div>
@@ -102,32 +93,29 @@
                                   percentage
                                 </th>
                                 <th>
-                                    aria_valuenow
+                              bar
                                 </th>
-                                <th>
-                                    aria_valuemax
-                                </th>
+
 
                                 </thead>
                                 <tbody>
+                                @foreach($skills as $skill)
                                 <tr>
-{{--                                    @foreach($abouts as $about)--}}
-                                        <td>
-{{--                                            {{$about->id}}--}}
-                                        </td>
-                                        <td>
-{{--                                            {{$about->name}}--}}
-                                        </td>
-                                        <td>
-{{--                                            {{$about->profile}}--}}
-                                        </td>
-                                        <td>
-{{--                                            {{$about->email}}--}}
-                                        </td>
-                                        <td>
-{{--                                            {{$about->phone_number}}--}}
 
                                         <td>
+                                            {{$skill->id}}
+                                        </td>
+                                        <td>
+                                            {{$skill->language}}
+                                        </td>
+                                        <td>
+                                            {{$skill->percentage}}
+
+                                        </td>
+                                        <td>
+                                            {{$skill->bar}}
+                                        </td>
+                                       <td>
                                             <a href="" title="show">
                                                 <i class="btn btn-primary btn-sm fa fa-eye" ></i>
                                             </a>
@@ -142,8 +130,9 @@
                                                 <button type="submit" class="btn btn-danger  p-0"><i class="btn btn-danger btn-sm fa fa-trash" ></i></button>
                                             </form>
                                         </td>
-{{--                                    @endforeach--}}
+
                                 </tr>
+                                @endforeach
 
 
                                 </tbody>
