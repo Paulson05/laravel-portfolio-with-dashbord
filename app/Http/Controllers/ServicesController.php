@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class ServicesController extends Controller
@@ -13,7 +14,10 @@ class ServicesController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.services');
+        $services = Service::all();
+        return view('admin.pages.services')->with([
+          'services' =>  $services
+        ]);
     }
 
     /**
@@ -34,7 +38,14 @@ class ServicesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'ion_ico'=> 'required',
+            'title' => 'required',
+            'description' => 'required'
+        ]);
+        $array=collect($request->only(['ion_ico','title','description']))->all();
+        Service::create($array);
+        return redirect()->back();
     }
 
     /**

@@ -260,7 +260,7 @@
                 <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
               </div>
               <div class="counter-num">
-                <p class="counter">50</p>
+                <p class="counter"> {{$counter->first()->counter}}</p>
                 <span class="counter-text">WORKS COMPLETED</span>
               </div>
             </div>
@@ -271,7 +271,7 @@
                 <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
               </div>
               <div class="counter-num">
-                <p class="counter">15</p>
+                <p class="counter">{{$counter->first()->years_of_experience}}</p>
                 <span class="counter-text">YEARS OF EXPERIENCE</span>
               </div>
             </div>
@@ -282,7 +282,7 @@
                 <span class="ico-circle"><i class="ion-ios-people"></i></span>
               </div>
               <div class="counter-num">
-                <p class="counter">550</p>
+                <p class="counter">{{$counter->first()->total_client}}</p>
                 <span class="counter-text">TOTAL CLIENTS</span>
               </div>
             </div>
@@ -293,8 +293,8 @@
                 <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
               </div>
               <div class="counter-num">
-                <p class="counter">36</p>
-                <span class="counter-text">AWARD WON</span>
+                <p class="counter">{{$counter->first()->certificate}}</p>
+                <span class="counter-text">certificate</span>
               </div>
             </div>
           </div>

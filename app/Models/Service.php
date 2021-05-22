@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Intro extends Model
+class Service extends Model
 {
     protected $guarded = [];
-    protected $table = 'intro';
+    protected $table = 'service';
     use HasFactory;
 }

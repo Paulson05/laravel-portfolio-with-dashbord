@@ -12,7 +12,7 @@
                                 <h4 class="card-title">workporfolio</h4>
                             </div>
                             <div class="col-4 text-right">
-                                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">Add user</a>
+                                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">+</a>
                             </div>
                             <div class="modal" id="myModal">
                                 <div class="modal-dialog modal-lg">
@@ -26,14 +26,14 @@
 
                                         <!-- Modal body -->
                                         <div class="modal-body">
-                                            <form action="" method="post" enctype= "multipart/form-data" >
+                                            <form action="{{route('workportfolio.store')}}" method="post" enctype= "multipart/form-data" >
                                                 @csrf
 
                                                 <div class="row">
                                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                                         <div class="form-group">
-                                                            <strong>Title</strong>
-                                                            <input type="text" name="title" class="form-control" placeholder="title">
+                                                            <strong>counter</strong>
+                                                            <input type="text" name="counter" class="form-control" placeholder="counter">
 
                                                         </div>
 
@@ -41,32 +41,38 @@
 
                                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                                         <div class="form-group">
-                                                            <strong>Slug</strong>
-                                                            <input type="text" name="slug" class="form-control" placeholder="slug">
+                                                            <strong>work_completed</strong>
+                                                            <input type="text" name="work_completed" class="form-control" placeholder="work completed">
 
                                                         </div>
 
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                                         <div class="form-group">
-                                                            <strong>Category:</strong>
-                                                            <select class="form-control" name="category_id">
+                                                            <strong>years_of_experience</strong>
+                                                            <input type="text" name="years_of_experience" class="form-control" placeholder="years of experince">
 
-
-                                                            </select>
                                                         </div>
+
                                                     </div>
-
-
                                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                                         <div class="form-group">
-                                                            <strong>Body:</strong>
-                                                            <textarea cols="10" rows="5" class="form-control"   name="body" value="body"
-                                                                      placeholder="" ></textarea>
+                                                            <strong>total_client</strong>
+                                                            <input type="text" name="total_client" class="form-control" placeholder="total client">
 
                                                         </div>
 
                                                     </div>
+                                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                                        <div class="form-group">
+                                                            <strong>certificate</strong>
+                                                            <input type="text" name="certificate" class="form-control" placeholder="certificate">
+
+                                                        </div>
+
+                                                    </div>
+
+
 
                                                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                                                         <button type="submit" class="btn btn-primary">Post</button>
@@ -96,70 +102,46 @@
                                     ID
                                 </th>
                                 <th>
-                                    Name
+                                   counter number
                                 </th>
                                 <th>
-                                    Country
+                                 experience
                                 </th>
                                 <th>
-                                    City
+                                    work completed
                                 </th>
                                 <th>
-                                    Salary
+                                   total client
                                 </th>
+                                <th>
+                                   certificate
+                                </th>
+
                                 </thead>
                                 <tbody>
+                                @foreach($counters as $counter)
                                 <tr>
                                     <td>
-                                        1
+                                        {{$counter->id}}
                                     </td>
                                     <td>
-                                        Dakota Rice
+                                        {{$counter->counter}}
                                     </td>
                                     <td>
-                                        Niger
+                                        {{$counter->work_completed}}
                                     </td>
                                     <td>
-                                        Oud-Turnhout
+                                        {{$counter->years_of_experience}}
                                     </td>
-                                    <td class="text-primary">
-                                        $36,738
+                                    <td>
+                                        {{$counter->total_client}}
                                     </td>
+                                    <td>
+                                        {{$counter->certificate}}
+                                    </td>
+
                                 </tr>
-                                <tr>
-                                    <td>
-                                        2
-                                    </td>
-                                    <td>
-                                        Minerva Hooper
-                                    </td>
-                                    <td>
-                                        Curaçao
-                                    </td>
-                                    <td>
-                                        Sinaai-Waas
-                                    </td>
-                                    <td class="text-primary">
-                                        $23,789
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        Sage Rodriguez
-                                    </td>
-                                    <td>
-                                        Netherlands
-                                    </td>
-                                    <td>
-                                        Baileux
-                                    </td>
-                                    <td class="text-primary">
-                                        $56,142
-                                    </td>
-                                </tr>
+                                @endforeach
 
                                 </tbody>
                             </table>

@@ -16,7 +16,10 @@ class CreateWorkPortfolioTable extends Migration
         Schema::create('work_portfolio', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('counter');
-            $table->string('counter_text');
+            $table->string('work_completed');
+            $table->string('years_of_experience');
+            $table->string('total_client');
+            $table->string('certificate');
             $table->timestamps();
         });
     }

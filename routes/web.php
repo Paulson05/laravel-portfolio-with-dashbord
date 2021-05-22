@@ -11,6 +11,7 @@ use App\Http\Controllers\WorkportfolioController;
 use App\Models\About;
 use App\Models\Home;
 use App\Models\Skill;
+use App\Models\Workportfolio;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,11 +29,13 @@ Route::get('/', function () {
     $homes = Home::all();
     $about= About::all();
     $skills = Skill::all();
+    $counter = Workportfolio::all();
 
     return view('portfolio')->with([
         'homes' =>$homes,
         'about' => $about,
-        'skills' => $skills
+        'skills' => $skills,
+        'counter' =>  $counter
     ]);
 });
 

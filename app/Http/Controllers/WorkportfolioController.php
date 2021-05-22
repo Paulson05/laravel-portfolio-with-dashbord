@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Workportfolio;
 use Illuminate\Http\Request;
 
 class WorkportfolioController extends Controller
@@ -13,7 +14,10 @@ class WorkportfolioController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.workportfolio');
+        $counters = Workportfolio::all();
+        return view('admin.pages.workportfolio')->with([
+            'counters'=> $counters
+        ]);
     }
 
     /**
@@ -34,7 +38,18 @@ class WorkportfolioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'counter'=> 'required',
+            'work_completed' => 'required',
+             'years_of_experience'=> 'required',
+            'total_client' => 'required',
+            'certificate' => 'required'
+
+        ]);
+        $array=collect($request->only(['counter', 'work_completed', 'years_of_experience','total_client','certificate']))->all();
+
+        Workportfolio::create($array);
+        return redirect()->back();
     }
 
     /**

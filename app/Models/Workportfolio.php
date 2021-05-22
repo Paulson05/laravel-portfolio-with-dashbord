@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Workportfolio extends Model
 {
-    protected $table = 'workportfolio';
+    protected $table = 'work_portfolio';
 protected $guarded = [];
     use HasFactory;
 }
