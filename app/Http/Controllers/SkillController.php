@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\About;
 use Illuminate\Http\Request;
 
-class AboutController extends Controller
+class SkillController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +13,7 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $abouts = About::all();
-        return view('admin.pages.about')->with([
-            'abouts' => $abouts
-        ]);
+     return view('admin.pages.skill');
     }
 
     /**
@@ -27,7 +23,7 @@ class AboutController extends Controller
      */
     public function create()
     {
-
+        //
     }
 
     /**
@@ -38,18 +34,7 @@ class AboutController extends Controller
      */
     public function store(Request $request)
     {
-
-        $this->validate($request,[
-            'name' => 'required',
-            'profile'=> 'required',
-            'phone_number' => 'required',
-            'email' => 'required',
-            'about_me' => 'required'
-
-        ]);
-        $array=collect($request->only(['name','email','phone_number', 'profile', 'about_me']))->all();
-        About::create($array);
-        return redirect()->back();
+        //
     }
 
     /**

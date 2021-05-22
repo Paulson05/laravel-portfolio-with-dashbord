@@ -17,9 +17,10 @@ class CreateSkillTable extends Migration
             $table->bigIncrements('id');
             $table->string('language');
             $table->string('percentage');
-            $table->string('aria-valuenow');
-            $table->string('aria-valuemax');
-            $table->string('paragraph');
+            $table->string('aria_valuenow');
+            $table->string('aria_valuemax');
+
+
             $table->timestamps();
         });
     }

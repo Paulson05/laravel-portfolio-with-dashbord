@@ -1,6 +1,6 @@
 @extends('templetes.defaults')
 @section('content')
-<div class="container">
+<div class="">
     @include('templetes.partials.headerpanel')
     <div class="row">
         <div class="col-md-12">
@@ -25,47 +25,57 @@
 
                                     <!-- Modal body -->
                                     <div class="modal-body">
-                                        <form action="" method="post" enctype= "multipart/form-data" >
+                                        <form action="{{route('about.store')}}" method="post" enctype= "multipart/form-data" >
                                             @csrf
 
                                             <div class="row">
                                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                                     <div class="form-group">
-                                                        <strong>Title</strong>
-                                                        <input type="text" name="title" class="form-control" placeholder="title">
-
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                                    <div class="form-group">
-                                                        <strong>Slug</strong>
-                                                        <input type="text" name="slug" class="form-control" placeholder="slug">
+                                                        <strong>Name</strong>
+                                                        <input type="text" name="name" class="form-control" placeholder="name">
 
                                                     </div>
 
                                                 </div>
                                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                                     <div class="form-group">
-                                                        <strong>Category:</strong>
-                                                        <select class="form-control" name="category_id">
+                                                        <strong>email</strong>
+                                                        <input type="text" name="email" class="form-control" placeholder="email">
 
-
-                                                        </select>
                                                     </div>
+
                                                 </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                                    <div class="form-group">
+                                                        <strong>profile</strong>
+                                                        <input type="text" name="profile" class="form-control" placeholder="profile">
+
+                                                    </div>
+
+                                                </div>
+
+
+
+                                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                                        <div class="form-group">
+                                                            <strong>phone_number</strong>
+                                                            <input type="text" name="phone_number" class="form-control" placeholder="phone number">
+
+                                                        </div>
+
+                                                    </div>
 
 
                                                 <div class="col-xs-12 col-sm-12 col-md-12">
                                                     <div class="form-group">
-                                                        <strong>Body:</strong>
-                                                        <textarea cols="10" rows="5" class="form-control"   name="body" value="body"
-                                                                  placeholder="" ></textarea>
+                                                        <strong>about me</strong>
+                                                       <textarea cols="10" rows="5" placeholder="about me" class="form-control" name="about_me"></textarea>
 
                                                     </div>
 
                                                 </div>
+
+
 
                                                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                                                     <button type="submit" class="btn btn-primary">Post</button>
@@ -86,79 +96,69 @@
 
                     </div>
                 </div>
-                <div class="card-body">
+                <div >
 
                     <div class="">
-                        <table class="table">
+                        <table class="table ">
                             <thead class=" text-primary">
-                            <th>
+                            <th style="font-size: 10px;">
                                 ID
                             </th>
-                            <th>
+                            <th >
                                 Name
                             </th>
                             <th>
-                                Country
+                              profile
                             </th>
                             <th>
-                                City
+                                email
                             </th>
                             <th>
-                                Salary
+                                phone-number
+                            </th>
+                            <th>
+                               About me
                             </th>
                             </thead>
                             <tbody>
                             <tr>
+                                @foreach($abouts as $about)
                                 <td>
-                                    1
-                                </td>
-                                <td>
-                                    Dakota Rice
+                                   {{$about->id}}
                                 </td>
                                 <td>
-                                    Niger
+                                   {{$about->name}}
                                 </td>
                                 <td>
-                                    Oud-Turnhout
+                                  {{$about->profile}}
                                 </td>
-                                <td class="text-primary">
-                                    $36,738
+                                <td>
+                                    {{$about->email}}
                                 </td>
+                                    <td>
+                                        {{$about->phone_number}}
+                                    </td>
+                                    <td>
+                                        {{$about->about_me}}
+                                    </td>
+                                    <td>
+                                        <a href="" title="show">
+                                            <i class="btn btn-primary btn-sm fa fa-eye" ></i>
+                                        </a>
+
+                                        <a href=""  >
+                                            <i class="btn btn-success btn-sm  fa fa-edit" ></i>
+                                        </a>
+
+                                        <form style="display: inline-block" method="post" action="" >
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger  p-0"><i class="btn btn-danger btn-sm fa fa-trash" ></i></button>
+                                        </form>
+                                    </td>
+                                @endforeach
                             </tr>
-                            <tr>
-                                <td>
-                                    2
-                                </td>
-                                <td>
-                                    Minerva Hooper
-                                </td>
-                                <td>
-                                    Curaçao
-                                </td>
-                                <td>
-                                    Sinaai-Waas
-                                </td>
-                                <td class="text-primary">
-                                    $23,789
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    3
-                                </td>
-                                <td>
-                                    Sage Rodriguez
-                                </td>
-                                <td>
-                                    Netherlands
-                                </td>
-                                <td>
-                                    Baileux
-                                </td>
-                                <td class="text-primary">
-                                    $56,142
-                                </td>
-                            </tr>
+
 
                             </tbody>
                         </table>

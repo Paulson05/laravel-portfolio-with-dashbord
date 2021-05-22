@@ -15,10 +15,11 @@ class CreateAboutTable extends Migration
     {
         Schema::create('about', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
             $table->string('profile');
             $table->string('email');
             $table->string('phone_number');
-
+            $table->string('about_me');
             $table->timestamps();
         });
     }
