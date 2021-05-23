@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IntroController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\SkillController;
@@ -53,6 +54,7 @@ Route::resource('intro', IntroController::class)->only(['index','store','show','
 Route::resource('services', ServicesController::class)->only(['index','store','show','update','destroy','edit', ]);Route::resource('services', ServicesController::class)->only(['index','store','show','update','destroy','edit', ]);
 Route::resource('skill', SkillController::class)->only(['index','store','show','update','destroy','edit', ]);
 Route::resource('workportfolio', WorkportfolioController::class)->only(['index','store','show','update','destroy','edit',]);
+Route::post('sendemail', [MailController::class, 'postEmail'])->name('postemail');
 
 
 
