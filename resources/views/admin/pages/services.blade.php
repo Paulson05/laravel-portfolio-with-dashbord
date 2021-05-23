@@ -100,16 +100,28 @@
                                 @foreach($services as $service)
                                 <tr>
                                     <td>
-                                       {{$services->id}}
+                                       {{$service->id}}
                                     </td>
                                     <td>
-                                        {$services->ion_ico}}
+                                        {{$service->ion_ico}}
                                     </td>
                                     <td>
-                                        {$services->title}}
+                                        {{$service->title}}
                                     </td>
                                     <td>
-                                        {$services->description}}
+                                        {{$service->description}}
+                                    </td>
+                                    <td>
+
+                                        <a href=""  >
+                                            <i class="btn btn-success btn-sm  fa fa-edit" ></i>
+                                        </a>
+
+                                        <form style="display: inline-block" method="post" action="{{route('services.destroy',['service'=> $service->id])}}" >
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger  p-0"><i class="btn btn-danger btn-sm fa fa-trash" ></i></button>
+                                        </form>
                                     </td>
 
                                 </tr>
