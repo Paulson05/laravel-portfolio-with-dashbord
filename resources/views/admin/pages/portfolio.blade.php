@@ -12,7 +12,7 @@
                                 <h4 class="card-title">porfolio</h4>
                             </div>
                             <div class="col-4 text-right">
-                                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">Add user</a>
+                                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal">+</a>
                             </div>
                             <div class="modal" id="myModal">
                                 <div class="modal-dialog modal-lg">
@@ -41,34 +41,33 @@
 
                                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                                         <div class="form-group">
-                                                            <strong>Slug</strong>
-                                                            <input type="text" name="slug" class="form-control" placeholder="slug">
+                                                            <strong>Category</strong>
+                                                            <input type="text" name="category" class="form-control" placeholder="category">
 
                                                         </div>
 
                                                     </div>
                                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                                         <div class="form-group">
-                                                            <strong>Category:</strong>
-                                                            <select class="form-control" name="category_id">
+                                                            <strong>Date</strong>
+                                                            <input type="text" name="date" class="form-control" placeholder="Date">
 
-
-                                                            </select>
                                                         </div>
+
                                                     </div>
 
 
                                                     <div class="col-xs-12 col-sm-12 col-md-12">
                                                         <div class="form-group">
-                                                            <strong>Body:</strong>
-                                                            <textarea cols="10" rows="5" class="form-control"   name="body" value="body"
+                                                            <strong>details:</strong>
+                                                            <textarea cols="10" rows="5" class="form-control"   name="details" value="body"
                                                                       placeholder="" ></textarea>
 
                                                         </div>
 
                                                     </div>
 
-                                                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                                    <div class="col-xs-12 col-sm-12 col-md-12 text-left">
                                                         <button type="submit" class="btn btn-primary">Post</button>
                                                     </div>
                                                 </div>
@@ -96,70 +95,50 @@
                                     ID
                                 </th>
                                 <th>
-                                    Name
+                                    Title
                                 </th>
                                 <th>
-                                    Country
+                                    Category
                                 </th>
                                 <th>
-                                    City
+                                    Date
                                 </th>
                                 <th>
-                                    Salary
+                                    Detail
                                 </th>
                                 </thead>
                                 <tbody>
+                                @foreach($portfolios as $portfolio)
                                 <tr>
                                     <td>
-                                        1
+                                      {{$portfolio->id}}
                                     </td>
                                     <td>
-                                        Dakota Rice
+                                        {{$portfolio->title}}
                                     </td>
                                     <td>
-                                        Niger
-                                    </td>
-                                    <td>
-                                        Oud-Turnhout
+                                        {{$portfolio->category}}
                                     </td>
                                     <td class="text-primary">
-                                        $36,738
+                                        {{$portfolio->date}}
+                                    </td>
+                                    <td >
+                                        {{$portfolio->details}}
+                                    </td>
+                                    <td>
+
+                                        <a href=""  >
+                                            <i class="btn btn-success btn-sm  fa fa-edit" ></i>
+                                        </a>
+
+                                        <form style="display: inline-block" method="post" action="{{route('portfolio.destroy',['portfolio'=> $portfolio->id])}}" >
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger  p-0"><i class="btn btn-danger btn-sm fa fa-trash" ></i></button>
+                                        </form>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        2
-                                    </td>
-                                    <td>
-                                        Minerva Hooper
-                                    </td>
-                                    <td>
-                                        Curaçao
-                                    </td>
-                                    <td>
-                                        Sinaai-Waas
-                                    </td>
-                                    <td class="text-primary">
-                                        $23,789
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        3
-                                    </td>
-                                    <td>
-                                        Sage Rodriguez
-                                    </td>
-                                    <td>
-                                        Netherlands
-                                    </td>
-                                    <td>
-                                        Baileux
-                                    </td>
-                                    <td class="text-primary">
-                                        $56,142
-                                    </td>
-                                </tr>
+                                @endforeach
 
                                 </tbody>
                             </table>

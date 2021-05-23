@@ -10,6 +10,7 @@ use App\Http\Controllers\SkillController;
 use App\Http\Controllers\WorkportfolioController;
 use App\Models\About;
 use App\Models\Home;
+use App\Models\portfolio;
 use App\Models\Service;
 use App\Models\Skill;
 use App\Models\Workportfolio;
@@ -32,13 +33,15 @@ Route::get('/', function () {
     $skills = Skill::all();
     $counter = Workportfolio::all();
     $services = Service::all();
+    $portfolios = portfolio::all();
 
     return view('portfolio')->with([
         'homes' =>$homes,
         'about' => $about,
         'skills' => $skills,
         'counter' =>  $counter,
-        'services' => $services
+        'services' => $services,
+        'portfolios' => $portfolios
     ]);
 });
 

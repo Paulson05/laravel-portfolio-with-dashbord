@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\portfolio;
 use Illuminate\Http\Request;
 
 class PortfolioController extends Controller
@@ -13,7 +14,10 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        return view('admin.pages.portfolio');
+        $portfolios = portfolio::all();
+        return view('admin.pages.portfolio')->with([
+            'portfolios' => $portfolios
+        ]);
     }
 
     /**
@@ -34,7 +38,16 @@ class PortfolioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+               $this->validate($request,[
+                   'title'=> 'required',
+                   'category' => 'required',
+                   'date' => 'required',
+                   'details' => 'required'
+               ]);
+        $array=collect($request->only(['title','category','date','details']))->all();
+        portfolio::create($array);
+        return redirect()->back();
     }
 
     /**
@@ -77,8 +90,10 @@ class PortfolioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Portfolio $portfolio)
     {
-        //
+                $portfolio->delete();
+                return redirect()->back();
+     
     }
 }
