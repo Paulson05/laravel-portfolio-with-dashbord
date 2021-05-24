@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>DevFolio Bootstrap Portfolio Template - Index</title>
+  <title>onyebuchi</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -473,8 +473,8 @@
                             </div>
                           </div>
 
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                          <div class="col-md-12 text-left">
+                            <button type="submit" class="button button-a button-sm button-rouded">Send Message</button>
                           </div>
                         </div>
                       </form>

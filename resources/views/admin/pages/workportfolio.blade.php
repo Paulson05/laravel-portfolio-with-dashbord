@@ -1,4 +1,5 @@
 @extends('templetes.defaults')
+@section('title', '| workportfolio')
 @section('content')
 
     <div class="container">

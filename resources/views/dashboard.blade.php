@@ -1,4 +1,5 @@
 @extends('templetes.defaults')
+@section('title', '| dashboard')
 @section('content')
 <div class="">
   @include('templetes.partials.headerpanel')
