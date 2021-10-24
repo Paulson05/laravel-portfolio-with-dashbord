@@ -19,7 +19,15 @@ class HomeController extends Controller
              'homes'=> $homes
          ]);
     }
-
+public function about(){
+        return view('frontend.about');
+}
+    public function contact(){
+        return view('frontend.contact');
+    }
+    public function portfolio(){
+    return view('frontend.portfolio');
+}
     /**
      * Show the form for creating a new resource.
      *

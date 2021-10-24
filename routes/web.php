@@ -36,7 +36,7 @@ Route::get('/', function () {
     $services = Service::all();
     $portfolios = portfolio::all();
 
-    return view('portfolio')->with([
+    return view('frontend.homepage')->with([
         'homes' =>$homes,
         'about' => $about,
         'skills' => $skills,
@@ -44,7 +44,13 @@ Route::get('/', function () {
         'services' => $services,
         'portfolios' => $portfolios
     ]);
-});
+})->name('homepage');
+
+Route::get('/home/about',[HomeController::class, 'about'])->name('home.about');
+Route::get('/home/contact',[HomeController::class, 'contact'])->name('home.contact');
+Route::get('/home/portfolio',[HomeController::class, 'portfolio'])->name('home.portfolio');
+
+
 
 Route::get('admin',[AdminController::class, 'index'])->name('admindashboaard');
 Route::resource('home', HomeController::class)->only(['index','store','show','update','destroy','edit',  ]);

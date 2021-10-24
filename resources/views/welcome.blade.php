@@ -40,7 +40,7 @@
         <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll active" href="portfolio.blade.php">Home</a>
+                    <a class="nav-link js-scroll active" href="frontend/homepage.blade.php">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll" href="#about">About</a>
