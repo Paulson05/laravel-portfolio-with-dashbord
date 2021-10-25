@@ -44,7 +44,7 @@
                     <div class="col-6">
                         <ul class="about-list list-unstyled open-sans-font">
                             <li> <span class="title">first name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">onyebuchi</span> </li>
-                            <li> <span class="title">last name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">okofu</span> </li>
+                            <li> <span class="title">last_name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">okofu</span> </li>
                             <li> <span class="title">Email :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">onyebuchiokofu@mail.com</span> </li>
                         </ul>
                     </div>
