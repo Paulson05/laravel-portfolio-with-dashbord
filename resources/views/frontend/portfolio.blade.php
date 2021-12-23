@@ -38,40 +38,40 @@
                 <!-- Portfolio Item Starts -->
                 <li>
                     <figure>
-                        <img src="{{asset('img/projects/project-1.jpg')}}" alt="Portolio Image" />
-                        <div><span>Image Project</span></div>
+                        <img src="{{asset('img/projects/proj4.png')}}" alt="Portolio Image" />
+                        <div><span>Inventry system(pos)</span></div>
                     </figure>
                 </li>
                 <!-- Portfolio Item Ends -->
                 <!-- Portfolio Item Starts -->
                 <li>
                     <figure>
-                        <img src="{{asset('img/projects/project-2.jpg')}}" alt="Portolio Image" />
-                        <div><span>Youtube Project</span></div>
+                        <img src="{{asset('img/projects/proj1.png')}}" alt="Portolio Image" />
+                        <div><span>School Management system</span></div>
                     </figure>
                 </li>
                 <!-- Portfolio Item Ends -->
                 <!-- Portfolio Item Starts -->
                 <li>
                     <figure>
-                        <img src="{{asset('img/projects/project-3.jpg')}}" alt="Portolio Image" />
-                        <div><span>Slider Project</span></div>
+                        <img src="{{asset('img/projects/proj22.png')}}" alt="Portolio Image" />
+                        <div><span>Hospital Management System</span></div>
                     </figure>
                 </li>
                 <!-- Portfolio Item Ends -->
                 <!-- Portfolio Item Starts -->
                 <li>
                     <figure>
-                        <img src="{{asset('img/projects/project-4.jpg')}}" alt="Portolio Image" />
-                        <div><span>Local Video Project</span></div>
+                        <img src="{{asset('img/projects/proj3.png')}}" alt="Portolio Image" />
+                        <div><span>Investment website</span></div>
                     </figure>
                 </li>
                 <!-- Portfolio Item Ends -->
                 <!-- Portfolio Item Starts -->
                 <li>
                     <figure>
-                        <img src="{{asset('img/projects/project-5.jpg')}}" alt="Portolio Image" />
-                        <div><span>Image Project</span></div>
+                        <img src="{{asset('img/projects/sm2.png')}}" alt="Portolio Image" />
+                        <div><span>Social media app</span></div>
                     </figure>
                 </li>
                 <!-- Portfolio Item Ends -->
@@ -128,7 +128,7 @@
                             <h3>Youtube Project</h3>
                             <div class="row open-sans-font">
                                 <div class="col-6 mb-2">
-                                    <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Video</span>
+                                    <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">school management app</span>
                                 </div>
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Videohive</span>
@@ -144,7 +144,7 @@
                         <!-- Project Details Ends -->
                         <!-- Main Project Content Starts -->
                         <div class="videocontainer">
-                            <iframe class="youtube-video" src="https://www.youtube.com/embed/7e90gBu4pas?enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" allowfullscreen></iframe>
+                            <img src="{{asset('img/projects/proj11.png')}}" alt="Portolio Image" />
                         </div>
                         <!-- Main Project Content Ends -->
                     </figure>
