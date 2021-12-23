@@ -46,7 +46,6 @@
                     <a class="nav-link js-scroll" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll" href="#service">Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll" href="#work">Porfolio</a>
@@ -55,7 +54,7 @@
                     {{--            <a class="nav-link js-scroll" href="#blog">Blog</a>--}}
                     {{--          </li>--}}
                 <li class="nav-item">
-                    <a class="nav-link js-scroll" href="#contact">My contact</a>
+                    <a class="nav-link js-scroll" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
