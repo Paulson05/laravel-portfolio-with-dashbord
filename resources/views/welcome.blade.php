@@ -55,7 +55,7 @@
                     {{--            <a class="nav-link js-scroll" href="#blog">Blog</a>--}}
                     {{--          </li>--}}
                 <li class="nav-item">
-                    <a class="nav-link js-scroll" href="#contact">Contact</a>
+                    <a class="nav-link js-scroll" href="#contact">My contact</a>
                 </li>
             </ul>
         </div>
