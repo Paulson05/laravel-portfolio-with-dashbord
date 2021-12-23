@@ -11,7 +11,7 @@ use App\Http\Controllers\SkillController;
 use App\Http\Controllers\WorkportfolioController;
 use App\Models\About;
 use App\Models\Home;
-use App\Models\portfolio;
+use App\Models\Portfolio;
 use App\Models\Service;
 use App\Models\Skill;
 use App\Models\Workportfolio;
@@ -34,7 +34,7 @@ Route::get('/', function () {
     $skills = Skill::all();
     $counter = Workportfolio::all();
     $services = Service::all();
-    $portfolios = portfolio::all();
+    $portfolios = Portfolio::all();
 
     return view('frontend.homepage')->with([
         'homes' =>$homes,
