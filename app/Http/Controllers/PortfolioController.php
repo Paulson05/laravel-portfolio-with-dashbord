@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\portfolio;
+use App\Models\Portfolio;
 use Illuminate\Http\Request;
 
 class PortfolioController extends Controller
@@ -14,7 +14,7 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        $portfolios = portfolio::all();
+        $portfolios = Portfolio::all();
         return view('admin.pages.portfolio')->with([
             'portfolios' => $portfolios
         ]);
