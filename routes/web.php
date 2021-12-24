@@ -45,7 +45,7 @@ Route::get('/', function () {
         'portfolios' => $portfolios
     ]);
 })->name('homepage');
-Route::get('/',[HomeController::class, 'index'])->name('home.index');
+
 Route::get('/home/about',[HomeController::class, 'about'])->name('home.about');
 Route::get('/home/contact',[HomeController::class, 'contact'])->name('home.contact');
 Route::get('/home/portfolio',[HomeController::class, 'portfolio'])->name('home.portfolio');
