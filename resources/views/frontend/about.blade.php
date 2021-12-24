@@ -51,7 +51,7 @@
                     <div class="col-6">
                         <ul class="about-list list-unstyled open-sans-font">
                             <li> <span class="title">Address :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">gravity fm igboho oyo state</span> </li>
-                            <li> <span class="title">phone :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">07068420039</span> </li>
+                            <li> <span class="title">phone :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">09152406809, 07068420039</span> </li>
 
                             <li> <span class="title">Github :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">paulson05</span> </li>
                         </ul>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="col-6">
                         <div class="box-stats with-margin">
-                            <h3 class="poppins-font position-relative">17</h3>
+                            <h3 class="poppins-font position-relative">9</h3>
                             <p class="open-sans-font m-0 position-relative text-uppercase"> laravel completed <span class="d-block">projects</span></p>
                         </div>
                     </div>

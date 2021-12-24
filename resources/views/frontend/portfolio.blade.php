@@ -97,25 +97,23 @@
                     <figure>
                         <!-- Project Details Starts -->
                         <figcaption>
-                            <h3>Image Project</h3>
+                            <h3>inventry Project</h3>
                             <div class="row open-sans-font">
                                 <div class="col-12 col-sm-6 mb-2">
-                                    <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Website</span>
+                                    <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">inventry managent system</span>
+                                </div>
+                                
+                                <div class="col-12 col-sm-6 mb-2">
+                                    <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript laravel</span>
                                 </div>
                                 <div class="col-12 col-sm-6 mb-2">
-                                    <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Envato</span>
-                                </div>
-                                <div class="col-12 col-sm-6 mb-2">
-                                    <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
-                                </div>
-                                <div class="col-12 col-sm-6 mb-2">
-                                    <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">www.envato.com</a></span>
+                                    <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="https://bucci-inventry.herokuapp.com/" target="_blank">https://bucci-inventry.herokuapp.com/</a></span>
                                 </div>
                             </div>
                         </figcaption>
                         <!-- Project Details Ends -->
                         <!-- Main Project Content Starts -->
-                        <img src="{{asset('img/projects/project-1.jpg')}}" alt="Portolio Image" />
+                        <img src="{{asset('img/projects/proj4.png')}}" alt="Portolio Image" />
                         <!-- Main Project Content Ends -->
                     </figure>
                 </li>
@@ -125,19 +123,17 @@
                     <figure>
                         <!-- Project Details Starts -->
                         <figcaption>
-                            <h3>Youtube Project</h3>
+                            <h3>school management Project</h3>
                             <div class="row open-sans-font">
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">school management app</span>
                                 </div>
+                                
                                 <div class="col-6 mb-2">
-                                    <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Videohive</span>
+                                    <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">HTML, CSS, javascript, laravel</span>
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">Adobe After Effects</span>
-                                </div>
-                                <div class="col-6 mb-2">
-                                    <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">www.videohive.net</a></span>
+                                    <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="https://universityofbucci.herokuapp.com/" target="_blank">https://universityofbucci.herokuapp.com/</a></span>
                                 </div>
                             </div>
                         </figcaption>
@@ -155,19 +151,17 @@
                     <figure>
                         <!-- Project Details Starts -->
                         <figcaption>
-                            <h3>Slider Project</h3>
+                            <h3>hospital managment Project</h3>
                             <div class="row open-sans-font">
                                 <div class="col-6 mb-2">
-                                    <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Website</span>
+                                    <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">hospital manament</span>
+                                </div>
+                            
+                                <div class="col-6 mb-2">
+                                    <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript, laravel</span>
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Themeforest</span>
-                                </div>
-                                <div class="col-6 mb-2">
-                                    <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
-                                </div>
-                                <div class="col-6 mb-2">
-                                    <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">www.themeforest.net</a></span>
+                                    <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="https://buccihospital.herokuapp.com/" target="_blank">https://buccihospital.herokuapp.com/</a></span>
                                 </div>
                             </div>
                         </figcaption>
@@ -182,7 +176,7 @@
                             <!-- The slideshow -->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="{{asset('img/projects/project-3.jpg')}}" alt="slide 1">
+                                    <img src="{{asset('img/projects/proj22.png')}}" alt="slide 1">
                                 </div>
 
                                 <div class="carousel-item">
@@ -202,29 +196,23 @@
                     <figure>
                         <!-- Project Details Starts -->
                         <figcaption>
-                            <h3>Local Video Project</h3>
+                            <h3>investment Project</h3>
                             <div class="row open-sans-font">
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Video</span>
                                 </div>
+                               
                                 <div class="col-6 mb-2">
-                                    <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Videohive</span>
+                                    <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">Html, css, jquery, laravel</span>
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">Adobe Premium</span>
-                                </div>
-                                <div class="col-6 mb-2">
-                                    <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">www.envato.com</a></span>
+                                    <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="https://buccicrypto.herokuapp.com/" target="_blank">https://buccicrypto.herokuapp.com/</a></span>
                                 </div>
                             </div>
-                        </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
-                        <video id="video" class="responsive-video" controls poster="img/projects/project-1.jpg">
-                            <source src="img/projects/video.mp4" type="video/mp4">
-                        </video>
-                        <!-- Main Project Content Ends -->
-                    </figure>
+                            <figure>
+                                <img src="{{asset('img/projects/proj3.png')}}" alt="Portolio Image" />
+                                <div><span>Investment website</span></div>
+                            </figure>
                 </li>
                 <!-- Portfolio Item Detail Ends -->
                 <!-- Portfolio Item Detail Starts -->
@@ -232,7 +220,7 @@
                     <figure>
                         <!-- Project Details Starts -->
                         <figcaption>
-                            <h3>Image Project</h3>
+                            <h3>socail media Project</h3>
                             <div class="row open-sans-font">
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Website</span>
@@ -247,12 +235,10 @@
                                     <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">www.envato.com</a></span>
                                 </div>
                             </div>
-                        </figcaption>
-                        <!-- Project Details Ends -->
-                        <!-- Main Project Content Starts -->
-                        <img src="img/projects/project-5.jpg" alt="Portolio Image" />
-                        <!-- Main Project Content Ends -->
-                    </figure>
+                            <figure>
+                                <img src="{{asset('img/projects/proj3.png')}}" alt="Portolio Image" />
+                                <div><span>Investment website</span></div>
+                            </figure>
                 </li>
                 <!-- Portfolio Item Detail Ends -->
                 <!-- Portfolio Item Detail Starts -->
@@ -316,25 +302,23 @@
                     <figure>
                         <!-- Project Details Starts -->
                         <figcaption>
-                            <h3>Image Project</h3>
+                            <h3>investment Project</h3>
                             <div class="row open-sans-font">
                                 <div class="col-6 mb-2">
-                                    <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Website</span>
+                                    <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">investement</span>
+                                </div>
+                                
+                                <div class="col-6 mb-2">
+                                    <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript laravel</span>
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Envato</span>
-                                </div>
-                                <div class="col-6 mb-2">
-                                    <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
-                                </div>
-                                <div class="col-6 mb-2">
-                                    <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">www.envato.com</a></span>
+                                    <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="https://buccicrypto.herokuapp.com/" target="_blank">https://buccicrypto.herokuapp.com/</a></span>
                                 </div>
                             </div>
                         </figcaption>
                         <!-- Project Details Ends -->
                         <!-- Main Project Content Starts -->
-                        <img src="img/projects/project-8.jpg" alt="Portolio Image" />
+                        <img src="{{asset('img/projects/proj3.png')}}" alt="Portolio Image" />
                         <!-- Main Project Content Ends -->
                     </figure>
                 </li>
@@ -344,25 +328,21 @@
                     <figure>
                         <!-- Project Details Starts -->
                         <figcaption>
-                            <h3>Image Project</h3>
+                            <h3>social media Project</h3>
                             <div class="row open-sans-font">
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">Website</span>
                                 </div>
-                                <div class="col-6 mb-2">
-                                    <i class="fa fa-user-o pr-2"></i><span class="project-label">Client </span>: <span class="ft-wt-600 uppercase">Envato</span>
-                                </div>
+                               
                                 <div class="col-6 mb-2">
                                     <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">HTML, CSS, Javascript</span>
                                 </div>
-                                <div class="col-6 mb-2">
-                                    <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">www.envato.com</a></span>
-                                </div>
+                               
                             </div>
                         </figcaption>
                         <!-- Project Details Ends -->
                         <!-- Main Project Content Starts -->
-                        <img src="img/projects/project-9.jpg" alt="Portolio Image" />
+                        <img src="{{asset('img/projects/sm2.png')}}" alt="Portolio Image" />
                         <!-- Main Project Content Ends -->
                     </figure>
                 </li>
