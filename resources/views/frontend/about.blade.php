@@ -162,25 +162,37 @@
                             <div class="icon">
                                 <i class="fa fa-briefcase"></i>
                             </div>
-                            <span class="time open-sans-font text-uppercase">2018 - Present</span>
-                            <h5 class="poppins-font text-uppercase">Web Developer <span class="place open-sans-font">Envato</span></h5>
-                            <p class="open-sans-font">Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit, </p>
+                            <span class="time open-sans-font text-uppercase">October 2019-January2020</span>
+                            <h5 class="poppins-font text-uppercase">Web Developer <span class="place open-sans-font">3months remote internship(Frontend Development) code360</span></h5>
+                            <p class="open-sans-font">Build website layout, clone website with Htmls and css3.
+                                Deploy website with free hosting servies like netlify.</p>
                         </li>
                         <li>
                             <div class="icon">
                                 <i class="fa fa-briefcase"></i>
                             </div>
-                            <span class="time open-sans-font text-uppercase">2013 - 2018</span>
-                            <h5 class="poppins-font text-uppercase">UI/UX Designer <span class="place open-sans-font">Themeforest</span></h5>
-                            <p class="open-sans-font">Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt</p>
+                            <span class="time open-sans-font text-uppercase">May 2020-July2020</span>
+                            <h5 class="poppins-font text-uppercase">Backend Development <span class="place open-sans-font">3months remote internship(HNG8)</span></h5>
+                            <p class="open-sans-font">Designing of full stack wen application primarily with Html3, css3
+                                Bootstrap4 jqery laravel and mysql</p>
                         </li>
                         <li>
                             <div class="icon">
                                 <i class="fa fa-briefcase"></i>
                             </div>
-                            <span class="time open-sans-font text-uppercase">2005 - 2013</span>
-                            <h5 class="poppins-font text-uppercase">Consultant <span class="place open-sans-font">Videohive</span></h5>
-                            <p class="open-sans-font">Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt</p>
+                            <span class="time open-sans-font text-uppercase">May 2021-july2021</span>
+                            <h5 class="poppins-font text-uppercase">Fullstack web developmet) <span class="place open-sans-font">4months internship</span></h5>
+                            <p class="open-sans-font">Intergrating third-party api and building of api.
+                                Seeking to broaden knowledge of databases and deliver the
+                                highest standards of web design
+                                Developed an inventry Manament system(Pos), school
+                                portal, hopital manament systems primarily Html, Css3
+                                Boostrap4, jquery, ajax, Php(laravel), Mysql.
+                                PERSONAL SKILLS
+                                Html5 and Css3,
+                                Vanila javascript,
+                                Boostrap4,
+                                2</p>
                         </li>
                     </ul>
                 </div>
@@ -188,29 +200,22 @@
             <div class="col-lg-6 m-15px-tb">
                 <div class="resume-box">
                     <ul>
-                        <li>
-                            <div class="icon">
-                                <i class="fa fa-graduation-cap"></i>
-                            </div>
-                            <span class="time open-sans-font text-uppercase">2015</span>
-                            <h5 class="poppins-font text-uppercase">Engineering Degree <span class="place open-sans-font">Oxford University</span></h5>
-                            <p class="open-sans-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore</p>
-                        </li>
+                        
                         <li>
                             <div class="icon">
                                 <i class="fa fa-graduation-cap"></i>
                             </div>
                             <span class="time open-sans-font text-uppercase">2012</span>
-                            <h5 class="poppins-font text-uppercase">Master Degree <span class="place open-sans-font">Kiev University</span></h5>
-                            <p class="open-sans-font">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut adipisicing</p>
+                            <h5 class="poppins-font text-uppercase">H.N.D <span class="place open-sans-font">Federal Polytechnic Auchi, Edo</span></h5>
+                            <p class="open-sans-font">Higher National Diploma Electrical Eletronics Engineering</p>
                         </li>
                         <li>
                             <div class="icon">
                                 <i class="fa fa-graduation-cap"></i>
                             </div>
                             <span class="time open-sans-font text-uppercase">2009</span>
-                            <h5 class="poppins-font text-uppercase">Bachelor Degree <span class="place open-sans-font">Tunis High School</span></h5>
-                            <p class="open-sans-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ut labore</p>
+                            <h5 class="poppins-font text-uppercase">O.N.D <span class="place open-sans-font">Delta State Polytechnic, Delta State</span></h5>
+                            <p class="open-sans-font">Ordinary National Diploma Electrical Eletronics Engineering</p>
                         </li>
                     </ul>
                 </div>
