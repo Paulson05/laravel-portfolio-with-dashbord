@@ -43,8 +43,8 @@
                     </div>
                     <div class="col-6">
                         <ul class="about-list list-unstyled open-sans-font">
-                            <li> <span class="title">first name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">onyebuchi</span> </li>
-                            <li> <span class="title">last_name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">okofu</span> </li>
+                            <li> <span class="title">Name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Okofu Onyebuchi</span> </li>
+                           
                             <li> <span class="title">Email :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">onyebuchiokofu@mail.com</span> </li>
                         </ul>
                     </div>
@@ -53,7 +53,7 @@
                             <li> <span class="title">Address :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">gravity fm igboho oyo state</span> </li>
                             <li> <span class="title">phone :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">09152406809, 07068420039</span> </li>
 
-                            <li> <span class="title">Github :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">paulson05</span> </li>
+                            <li> <span class="title">Github :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"><a href="github.com/Paulson05">github.com/Paulson05</a></span> </li>
                         </ul>
                     </div>
                     <div class="col-12 mt-3">
@@ -86,12 +86,7 @@
                             <p class="open-sans-font m-0 position-relative text-uppercase">Happy<span class="d-block">customers</span></p>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="box-stats">
-                            <h3 class="poppins-font position-relative">0</h3>
-                            <p class="open-sans-font m-0 position-relative text-uppercase">awards <span class="d-block">won</span></p>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
             <!-- Boxes Ends -->
@@ -104,7 +99,7 @@
             </div>
             <div class="col-6 col-md-3 mb-3 mb-sm-5">
                 <div class="c100 p25">
-                    <span>25%</span>
+                    <span>55%</span>
                     <div class="slice">
                         <div class="bar"></div>
                         <div class="fill"></div>
