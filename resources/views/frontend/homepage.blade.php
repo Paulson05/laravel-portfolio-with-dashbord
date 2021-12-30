@@ -8,7 +8,7 @@
         <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
             <div>
                 <img src="{{asset('img/myimg.jpg')}}" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture" />
-                <h1 class="text-uppercase poppins-font">I'm Okofu onyebuchi t.<span>Back-end Developer</span></h1>
+                <h1 class="text-uppercase poppins-font">I am  Okofu onyebuchi<span>Back-end Developer</span></h1>
    <p class="open-sans-font">I am  a  Backend developer focused on crafting clean & user‑friendly experiences and finding solution, Designing and developed web application across multiple APIs, third-party intergration and databases. Passionate and hardworking with penchant for developing customized interfaces that factor in unique demands for accessibility, reachability and security.  </p>  
                 <a class="button" href="{{route('home.about')}}">
                     <span class="button-text">more about me</span>
