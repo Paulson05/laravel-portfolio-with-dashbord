@@ -53,7 +53,7 @@
                             <li> <span class="title">Address :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">gravity fm igboho oyo state</span> </li>
                             <li> <span class="title">phone :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">09152406809, 07068420039</span> </li>
 
-                            <li> <span class="title">Github :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"><a href="github.com/Paulson05">github.com/Paulson05</a></span> </li>
+                            <li> <span class="title">Github :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"><a href="https://github.com/Paulson05?tab=repositories">github.com/Paulson05</a></span> </li>
                         </ul>
                     </div>
                     <div class="col-12 mt-3">
